@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hilfe und Kontakt – BonBilanz</title>
+<meta name="description" content="Hilfe zu BonBilanz: erste Schritte, Laden vieler Kassenbons, Anmeldung bei lidl.de, Sicherung, Daten löschen und Kontakt.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="BonBilanz">
+<link rel="stylesheet" href="stil.css">
+<style>
+  .hilfe { padding: clamp(40px, 6vw, 72px) 0; }
+  .hilfe .wrap { max-width: 820px; }
+  .hilfe h1 { font-size: clamp(30px, 4.2vw, 44px); line-height: 1.12; letter-spacing: -.02em; margin: 0 0 14px; }
+  .hilfe h2 { font-size: 20px; margin: 40px 0 10px; }
+  .hilfe p, .hilfe li { max-width: 68ch; }
+  .hilfe details { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; margin: 10px 0; }
+  .hilfe summary { font-weight: 600; cursor: pointer; }
+  .hilfe details[open] summary { margin-bottom: 8px; }
+  .kontakt { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 18px 20px; margin-top: 14px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<header class="kopf">
+  <div class="wrap">
+    <a class="marke" href="./" aria-label="BonBilanz Startseite"><img src="bilder/icon-128.png" alt="" width="30" height="30">BonBilanz</a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="./#funktionen">Funktionen</a>
+      <a class="opt" href="datenschutz.html">Datenschutz</a>
+      <a href="hilfe.html" aria-current="page">Hilfe</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inhalt" class="hilfe">
+  <div class="wrap">
+    <p class="kicker">Hilfe und Kontakt</p>
+    <h1>So klappt es mit BonBilanz</h1>
+    <p class="muted">BonBilanz ist eine Browser-Erweiterung für Chrome ab Version 116. Du brauchst ein Lidl-Plus-Konto mit digitalen Kassenbons in Deutschland. BonBilanz ist inoffiziell und nicht mit Lidl verbunden.</p>
+
+    <h2>Erste Schritte</h2>
+    <ol>
+      <li>Auf <a href="https://www.lidl.de">www.lidl.de</a> mit deinem Lidl-Plus-Konto anmelden.</li>
+      <li>Auf das BonBilanz-Symbol in der Chrome-Symbolleiste klicken. Das Dashboard öffnet sich.</li>
+      <li>Den Datenhinweis lesen und „Kassenbons laden“ klicken.</li>
+      <li>Später holt „Aktualisieren“ nur die neuen Bons.</li>
+    </ol>
+
+    <h2>Häufige Fragen</h2>
+    <details>
+      <summary>Wie lange dauert das erste Laden?</summary>
+      <p>Das hängt von der Zahl deiner Bons ab, bei einigen Hundert Bons meist ein paar Minuten. BonBilanz lädt in kleinen Paketen und speichert jedes Paket sofort. Lass das Dashboard dabei geöffnet. Du kannst nebenher normal weitersurfen.</p>
+    </details>
+    <details>
+      <summary>Das Laden macht eine Pause oder meldet „lidl.de bremst gerade“.</summary>
+      <p>Bei vielen Bons begrenzt lidl.de manchmal die Zahl der Abrufe oder beendet die Anmeldung zwischendurch. BonBilanz wartet dann kurz, öffnet die Kassenbon-Seite neu und macht langsamer weiter. Bereits geladene Bons bleiben gespeichert.</p>
+    </details>
+    <details>
+      <summary>„Du bist bei lidl.de nicht angemeldet“ – was nun?</summary>
+      <p>Öffne lidl.de, melde dich mit deinem Lidl-Plus-Konto an und klicke im Dashboard erneut auf „Aktualisieren“ bzw. „Kassenbons laden“. Es geht beim ersten fehlenden Bon weiter, nichts wird doppelt geladen.</p>
+    </details>
+    <details>
+      <summary>„BonBilanz darf lidl.de im Moment nicht lesen“</summary>
+      <p>Der Websitezugriff der Erweiterung ist in Chrome eingeschränkt. Klicke im Hinweis auf „Zugriff auf lidl.de erlauben“ oder stelle es unter chrome://extensions → BonBilanz → Details → Websitezugriff um.</p>
+    </details>
+    <details>
+      <summary>Ältere Bons haben nur eine Summe, ohne einzelne Artikel.</summary>
+      <p>Für ältere Einkäufe stellt lidl.de keinen Kassenzettel bereit, sondern nur Datum, Filiale und Summe. Wie weit zurück es Kassenzettel gibt, legt Lidl fest. Auf lidl.de steht dazu ein Hinweis mit einem Stichtag. Die tatsächliche Grenze kann aber auch später liegen und sich mit der Zeit verschieben. In der Lidl-Plus-App sind ältere Bons oft noch vollständig zu sehen. BonBilanz liest aber über lidl.de und bekommt dort für diese Bons nur die Summe.</p>
+      <p>Diese Bons zählen bei Ausgaben pro Monat und Jahr, Filialen und Einkaufszeiten mit. Bei Warengruppen, Preisentwicklung und persönlicher Inflation fehlen sie. Diese Auswertungen beginnen deshalb erst mit den ersten Bons, für die es einen Kassenzettel gibt.</p>
+      <p>Tipp: Was BonBilanz einmal geladen hat, bleibt gespeichert, auch wenn Lidl ältere Kassenzettel später nicht mehr anbietet. Aktualisiere deshalb regelmäßig und exportiere ab und zu eine Sicherung („Daten → Sicherung exportieren“).</p>
+    </details>
+    <details>
+      <summary>Bei einigen Bons „weicht die Summe ab“.</summary>
+      <p>Die Summe der einzelnen Positionen passt dann nicht zur Bonsumme. Das kann an besonderen Rabatten liegen oder daran, dass Lidl das Bon-Format geändert hat. Klicke einmal erneut auf „Aktualisieren“. Bleibt der Hinweis, melde dich gern mit der Diagnose (siehe unten).</p>
+    </details>
+    <details>
+      <summary>Wie sichere ich meine Daten oder ziehe auf einen anderen Rechner um?</summary>
+      <p>Im Dashboard oben rechts „Daten → Sicherung exportieren“. Die Datei kannst du in BonBilanz auf einem anderen Rechner oder nach einer Neuinstallation über „Daten → Sicherung importieren …“ wieder einlesen. Hast du BonBilanz vorher als Testversion („entpackt“) genutzt, sieht die Version aus dem Chrome Web Store diese Daten nicht automatisch. Exportiere sie dort und importiere sie in der neuen Version.</p>
+    </details>
+    <details>
+      <summary>Wie lösche ich alle Daten?</summary>
+      <p>„Daten → Alle Daten löschen“ im Dashboard. Auch das Deinstallieren der Erweiterung löscht alles. Deine Kassenbons bei Lidl Plus bleiben davon unberührt.</p>
+    </details>
+    <details>
+      <summary>Wohin gehen meine Daten?</summary>
+      <p>Nirgendwohin. BonBilanz speichert alles nur lokal in deinem Browser und schickt nichts an den Anbieter oder an Dritte. Details stehen in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+    </details>
+
+    <h2>Fehler melden und Kontakt</h2>
+    <div class="kontakt">
+      <p style="margin-top:0">Am schnellsten helfen kann ich, wenn du im Dashboard „Daten → Diagnose kopieren“ wählst und den Text in deine E-Mail einfügst. Die Diagnose enthält keine Artikelnamen, Bon-Nummern oder Filialen.</p>
+      <p style="margin-bottom:0">E-Mail: <a href="mailto:mail@andreas-lindner.net?subject=BonBilanz">mail@andreas-lindner.net</a><br>
+      Anbieter und weitere Angaben: <a href="https://andreas-lindner.net/impressum.html">Impressum</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="fuss">
+  <div class="wrap">
+    <span>© 2026 BonBilanz</span>
+    <nav aria-label="Rechtliches">
+      <a href="hilfe.html">Hilfe</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="https

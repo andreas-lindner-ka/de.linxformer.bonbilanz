@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – BonBilanz (Browser-Erweiterung)</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="BonBilanz">
+<style>
+  :root { --paper:#f6f5f1; --panel:#fff; --ink:#1d2328; --muted:#646d73; --line:#e2e0d8; --accent:#0f6e78; color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#15191c; --panel:#1d2226; --ink:#e8ebec; --muted:#9aa4a9; --line:#2e353a; --accent:#4fb3bd; } }
+  body { margin:0; background:var(--paper); color:var(--ink); font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:820px; margin:0 auto; padding:32px 20px 48px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:24px 28px; }
+  h1 { font-size:24px; margin:0 0 4px; } h2 { font-size:17px; margin:26px 0 6px; }
+  p, li { max-width:75ch; } ul { padding-left:20px; } li { margin:3px 0; }
+  .meta { color:var(--muted); margin:0 0 18px; font-size:13.5px; }
+  .kurz { border-left:3px solid var(--accent); padding:4px 0 4px 14px; margin:0 0 8px; }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; font-size:14px; } th, td { text-align:left; vertical-align:top; padding:7px 8px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:500; } code { font-size:13px; }
+</style>
+</head>
+<body>
+<main><div class="card">
+<h1>Datenschutzerklärung</h1>
+<p class="meta">BonBilanz – Browser-Erweiterung für Lidl-Plus-Kassenbons · Stand: 31. Oktober 2026 (Version 1.0.0)</p>
+
+<p class="kurz"><b>Kurz gesagt:</b> BonBilanz verarbeitet deine Kassenbons ausschließlich lokal in deinem Browser. Es gibt keinen Server des Anbieters. Es werden keine Daten an den Anbieter oder an Dritte übertragen, und es gibt keine Analyse-, Tracking- oder Werbedienste.</p>
+
+<h2>1. Verantwortlicher</h2>
+<p>Anbieter der Erweiterung ist die im <a href="https://andreas-lindner.net/impressum.html" target="_blank" rel="noopener">Impressum</a> genannte Person. Dort findest du auch die Kontaktdaten für Fragen zum Datenschutz. Der Anbieter selbst erhält keine Daten aus der Erweiterung.</p>
+<p>BonBilanz ist ein inoffizielles Werkzeug und nicht mit der Lidl Stiftung &amp; Co. KG oder Lidl Plus verbunden. Für die Verarbeitung deiner Daten auf lidl.de und in Lidl Plus ist Lidl verantwortlich; dafür gilt die Datenschutzerklärung von Lidl.</p>
+
+<h2>2. Welche Daten verarbeitet werden</h2>
+<p>Die Erweiterung wird nur aktiv, wenn du es auslöst (z. B. „Kassenbons laden“, „Aktualisieren“ oder „Belege exportieren“). Dann ruft sie in einem Tab von lidl.de, in dem du angemeldet bist, deine digitalen Kassenbons ab. Die Verbindung besteht direkt zwischen deinem Browser und lidl.de und ist per HTTPS verschlüsselt. Deine bestehende Anmeldung wird dabei nur genutzt; Passwörter, Cookies oder Zugangsdaten werden nicht ausgelesen oder gespeichert.</p>
+<p>Gespeichert werden je Kassenbon:</p>
+<ul>
+  <li>Bon-Kennung, Datum und Uhrzeit, Filiale, Gesamtsumme und Artikelanzahl,</li>
+  <li>die Positionen: Artikelname, Menge, Preis, Steuerklasse sowie Rabatt- und Pfandzeilen.</li>
+</ul>
+<p>Nicht gespeichert werden insbesondere Zugangsdaten, deine Lidl-Plus-Kundennummer und Zahlungsdaten. Beim Export von Belegen werden die betreffenden Bons einschließlich des vollständigen Bontexts und des Lidl-Logos erneut abgerufen, nur um daraus PDF-Dateien zu erzeugen. Diese PDFs können alles enthalten, was auf dem Kassenbon steht (z. B. die Zahlungsart).</p>
+<p>Aus den gespeicherten Daten berechnet die Erweiterung lokal Statistiken, Kaufrhythmen und deine persönliche Preisentwicklung. Die dafür genutzten Verbraucherpreisindizes des Statistischen Bundesamts sind fest in der Erweiterung enthalten; es wird nichts nachgeladen.</p>
+
+<h2>3. Speicherort und Speicherdauer</h2>
+<p>Die Daten liegen im lokalen IndexedDB-Speicher der Erweiterung in deinem Browserprofil. Sie werden nicht über dein Google-Konto synchronisiert. Sie bleiben gespeichert, bis du sie unter „Daten → Alle Daten löschen“ entfernst oder die Erweiterung deinstallierst.</p>
+<p>Ebenfalls lokal gespeichert werden deine Einstellungen: die Auswahl im Reiter „Belege“ und von dir selbst festgelegte Warengruppen für einzelne Artikelnamen.</p>
+<p>Exporte (CSV, JSON-Sicherung, PDF-Belege) speichert die Erweiterung nur auf deine Anweisung in deinem Download-Ordner. Was danach mit diesen Dateien geschieht, bestimmst du.</p>
+
+<p>Über „Daten → Diagnose kopieren“ kannst du eine technische Zusammenfassung erzeugen, etwa für eine Fehlermeldung. Sie wird dir vollständig angezeigt und nur auf deinen Klick in die Zwischenablage kopiert; die Erweiterung verschickt sie nicht. Sie enthält Versionsnummern, Anzahlen (z. B. Bons pro Jahr, Positionen pro Typ) und bei abweichenden Summen nur Monat und Differenz – keine Artikelnamen, Bon-Kennungen, Filialen, Uhrzeiten oder Einzelbeträge.</p>
+
+<h2>4. Zweck und Rechtsgrundlage</h2>
+<p>Die Daten werden ausschließlich verarbeitet, um dir die Funktionen der Erweiterung bereitzustellen: Übersicht und Statistik deiner Einkäufe, persönliche Inflation und Beleg-Export. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der von dir genutzten Funktionen). Eine Nutzung zu anderen Zwecken, etwa Werbung, Profilbildung oder Bonitätsbewertung, findet nicht statt.</p>
+
+<h2>5. Weitergabe an Dritte</h2>
+<p>Es findet keine Weitergabe statt. Die Erweiterung baut nur Verbindungen zu lidl.de auf und bindet keine externen Schriften, Skripte, Analysedienste oder Werbenetzwerke ein. Niemand außer dir kann die Daten einsehen.</p>
+<p>Drucken und Bilder: Wenn du eine Kachel druckst, als Bild kopierst, speicherst oder teilst, entsteht das Bild erst bei deinem Klick und nur auf deinem Gerät. BonBilanz lädt dabei nichts hoch. Wohin das Bild danach geht (Zwischenablage, Datei, E-Mail, Messenger), bestimmst du selbst; für die gewählte App gilt deren Datenschutzerklärung.</p>
+<p>Die Nutzung von Daten durch BonBilanz entspricht der <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank" rel="noopener">Chrome Web Store User Data Policy einschließlich der Limited-Use-Anforderungen</a>.<br>
+<span lang="en">The use of information by BonBilanz adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements.</span></p>
+
+<h2>6. Berechtigungen der Erweiterung</h2>
+<table>
+  <thead><tr><th>Berechtigung</th><th>Wofür</th></tr></thead>
+  <tbody>
+    <tr><td>Zugriff auf www.lidl.de</td><td>Abruf deiner Kassenbons im angemeldeten lidl.de-Tab</td></tr>
+    <tr><td><code>scripting</code></td><td>Ausführen des Abrufs in diesem Tab, nur nach deinem Klick</td></tr>
+    <tr><td><code>storage</code>, <code>unlimitedStorage</code></td><td>Lokales Speichern der Kassenbons (IndexedDB, auch bei vielen Jahren Einkaufshistorie), Einstellungen wie die Beleg-Auswahl</td></tr>
+    <tr><td><code>downloads</code></td><td>Speichern deiner Exporte und PDF-Belege im Download-Ordner</td></tr>
+  </tbody>
+</table>
+
+<h2>7. Chrome Web Store</h2>
+<p>Installation und Updates laufen über den Chrome Web Store von Google. Dabei verarbeitet Google Daten in eigener Verantwortung, siehe <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>. Der Anbieter erhält von Google nur zusammengefasste Statistiken, etwa die Zahl der Installationen.</p>
+
+<h2>8. Deine Rechte</h2>
+<p>Da der Anbieter keine personenbezogenen Daten aus der Erweiterung erhält, liegen alle Daten bei dir: Du kannst sie jederzeit einsehen, exportieren und löschen. Unabhängig davon hast du nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
+
+<h2>9. Änderungen</h2>
+<p>Ändert sich der Umgang mit Daten, wird diese Erklärung angepasst und die Änderung in der Erweiterung deutlich angezeigt, bevor neue Daten verarbeitet werden.</p>
+</div></main>
+</body>
+</html>

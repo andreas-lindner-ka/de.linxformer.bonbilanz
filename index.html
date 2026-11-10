@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BonBilanz – Einkaufsstatistik aus deinen Lidl-Plus-Kassenbons</title>
+<meta name="description" content="Browser-Erweiterung für Chrome: Ausgaben, Warengruppen, Preisentwicklung und persönliche Inflation aus deinen digitalen Lidl-Plus-Kassenbons. Alles bleibt lokal in deinem Browser.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="BonBilanz">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<header class="kopf">
+  <div class="wrap">
+    <a class="marke" href="./" aria-label="BonBilanz Startseite"><img src="bilder/icon-128.png" alt="" width="30" height="30">BonBilanz</a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#funktionen">Funktionen</a>
+      <a class="opt" href="#datenschutz">Daten</a>
+      <a href="#loslegen">Loslegen</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inhalt">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <h1>Wohin dein Geld beim Einkaufen geht.</h1>
+        <p class="lead">BonBilanz ist eine Browser-Erweiterung für Chrome. Sie liest deine digitalen Lidl-Plus-Kassenbons und macht daraus eine Bilanz: Ausgaben, Warengruppen, Preise und deine persönliche Inflation. Alles bleibt in deinem Browser.</p>
+        <div class="aktion">
+          <a class="knopf" role="link" aria-disabled="true">Bald im Chrome Web Store</a>
+          <span class="klein">Kostenlos · für Chrome ab Version 116 · inoffiziell, nicht mit Lidl verbunden</span>
+        </div>
+      </div>
+      <figure class="hero-bild rahmen" style="margin-left:0;margin-right:0;margin-bottom:0">
+        <img src="bilder/s1-uebersicht.webp" width="1600" height="904" alt="BonBilanz-Übersicht mit Ausgaben, Zahl der Einkäufe, Durchschnitt pro Einkauf, Rabatten und einem Säulendiagramm der Ausgaben pro Monat">
+      </figure>
+    </div>
+  </section>
+
+  <section class="abschnitt" id="funktionen" aria-labelledby="t-funktionen">
+    <div class="wrap">
+      <p class="kicker">Funktionen</p>
+      <h2 id="t-funktionen" style="margin-bottom:clamp(36px,5vw,56px)">Was BonBilanz aus deinen Kassenbons macht</h2>
+
+      <div class="funktion">
+        <div class="text">
+          <h3>Persönliche Inflation</h3>
+          <p>Wie viel teurer ist dein Einkauf wirklich geworden? BonBilanz vergleicht die Preise der Produkte, die du kaufst, Jahr für Jahr – gewichtet danach, wie viel du dafür ausgibst.</p>
+          <p class="muted">Daneben steht die offizielle Preisentwicklung des Statistischen Bundesamts für genau deinen Einkaufsmix. So siehst du, ob es an den Preisen liegt oder an deiner Produktwahl.</p>
+        </div>
+        <figure class="rahmen" style="margin:0"><img src="bilder/s2-inflation.webp" width="1600" height="934" loading="lazy" alt="Reiter Persönliche Inflation: Dein Einkauf ist seit 2023 um 13,4 Prozent teurer geworden, laut Destatis wären es 5,4 Prozent gewesen; darunter ein Säulendiagramm je Jahr"></figure>
+      </div>
+
+      <div class="funktion umgekehrt">
+        <div class="text">
+          <h3>Jeder Preis im Verlauf</h3>
+          <p>Alle Produkte mit Käufen, Ausgaben und Preisänderung seit dem ersten Kauf. Ein Klick zeigt, was du wann bezahlt hast.</p>
+          <ul class="punkte">
+            <li>Ausgaben nach Warengruppe, pro Monat und Jahr</li>
+            <li>Einkäufe nach Wochentag, Uhrzeit und Filiale</li>
+            <li>Warengruppen bei Bedarf selbst festlegen</li>
+            <li>Klick auf einen Monat zeigt alles nur für diesen Monat</li>
+            <li>Jede Kachel drucken oder als Bild teilen</li>
+          </ul>
+        </div>
+        <figure class="rahmen" style="margin:0"><img src="bilder/s3-produkte.webp" width="1600" height="599" loading="lazy" alt="Preisentwicklung für Kaffee Crema 1 kg als Stufendiagramm von rund 11 Euro im Jahr 2023 auf rund 14 Euro im Jahr 2026"></figure>
+      </div>
+
+      <div class="funktion">
+        <div class="text">
+          <h3>Bald wieder fällig</h3>
+          <p>Aus deiner Bonhistorie erkennt BonBilanz, wie oft du bestimmte Produkte kaufst, und zeigt, was üblicherweise bald wieder ansteht. Eine Vermutung aus deinen Käufen – keine Aussage über deine Vorräte.</p>
+        </div>
+        <figure class="rahmen" style="margin:0"><img src="bilder/s4-rhythmus.webp" width="1110" height="598" loading="lazy" alt="Liste Bald wieder fällig mit Produkten wie Orangensaft, Salami und Butter, jeweils mit Kaufrhythmus und Tagen seit Fälligkeit"></figure>
+      </div>
+
+      <div class="funktion umgekehrt">
+        <div class="text">
+          <h3>Belege für die Steuer</h3>
+          <p>Werkzeug, Büromaterial oder Arbeitsmittel bei Lidl gekauft? Artikel anhaken, exportieren: BonBilanz speichert die passenden Kassenbons als PDF und legt eine Belegliste mit Summe und Mehrwertsteuer dazu.</p>
+          <p class="muted">Außerdem: Export als CSV und Sicherung als JSON-Datei, die du jederzeit wieder importieren kannst.</p>
+        </div>
+        <figure class="rahmen" style="margin:0"><img src="bilder/s5-belege.webp" width="1600" height="1000" loading="lazy" alt="Reiter Belege für die Steuer mit einer Artikelliste, fünf angehakten Non-Food-Artikeln und dem Knopf Belege exportieren"></figure>
+      </div>
+      <p class="klein" style="margin-top:40px">Alle Abbildungen zeigen Beispieldaten.</p>
+    </div>
+  </section>
+
+  <section class="abschnitt band" id="datenschutz" aria-labelledby="t-daten">
+    <div class="wrap">
+      <p class="kicker">Deine Daten</p>
+      <h2 id="t-daten">Bleibt alles bei dir.</h2>
+      <p class="muted" style="max-width:62ch;margin:0">Einkaufsdaten verraten viel. Deshalb hat BonBilanz keinen Server, kein Konto und keine Cloud.</p>
+      <div class="gitter">
+        <div><h3>Lokal gespeichert</h3><p>Die Kassenbons liegen nur im Speicher der Erweiterung in deinem Browserprofil. Löschen geht mit einem Klick.</p></div>
+        <div><h3>Keine Weitergabe</h3><p>Die Erweiterung verbindet sich nur mit lidl.de. Keine Analyse-, Tracking- oder Werbedienste, keine KI-Dienste.</p></div>
+        <div><h3>Nur auf deinen Klick</h3><p>Abgerufen wird nur, wenn du „Aktualisieren“ oder „Belege exportieren“ wählst. Deine Anmeldung bei lidl.de wird genutzt, nicht gespeichert.</p></div>
+      </div>
+      <p style="margin:32px 0 0"><a href="datenschutz.html">Zur Datenschutzerklärung</a></p>
+    </div>
+  </section>
+
+  <section class="abschnitt" id="loslegen" aria-labelledby="t-los">
+    <div class="wrap">
+      <p class="kicker">Loslegen</p>
+      <h2 id="t-los">In drei Schritten zur Bilanz</h2>
+      <ol class="schritte">
+        <li><h3>Installieren</h3><p>BonBilanz aus dem Chrome Web Store hinzufügen. Der Eintrag folgt in Kürze.</p></li>
+        <li><h3>Bei lidl.de anmelden</h3><p>Mit deinem Lidl-Plus-Konto auf lidl.de anmelden, wie gewohnt.</p></li>
+        <li><h3>Kassenbons laden</h3><p>Auf das BonBilanz-Symbol klicken und „Kassenbons laden“ wählen. Später genügt „Aktualisieren“.</p></li>
+      </ol>
+      <p class="klein" style="margin-top:28px">BonBilanz ist ein inoffizielles Werkzeug und nicht mit der Lidl Stiftung &amp; Co. KG oder Lidl Plus verbunden. Lidl und Lidl Plus sind Marken ihrer jeweiligen Inhaber. Keine Steuerberatung.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="fuss">
+  <div class="wrap">
+    <span>© 2026 BonBilanz</span>
+    <nav aria-label="Rechtliches">
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="https://andreas-lindner.net/impressum.html">Impressum</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
